@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Switch, Route } from "react-router-dom";
+import Login from "./pages/Login/Login";
+import Menu from "./pages/Menu/Menu";
+import VaccineRecord from "./pages/VaccineRecord/VaccineRecord";
+import VaccineRecordTimeline from "./pages/VaccineRecordTimeline/VaccineRecordTimeline";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Switch>
+        <Route path="/" component={Login} exact />
+        <Route path="/menu" component={Menu} />
+        <Route path="/vaccine-record" component={VaccineRecord} exact />
+        <Route path="/vaccine-record/:name" component={VaccineRecordTimeline} />
+      </Switch>
     </div>
   );
 }

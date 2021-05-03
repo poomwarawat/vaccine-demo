@@ -1,0 +1,63 @@
+.login-page {
+  width: 100%;
+  height: 100vh;
+  background: rgb(49, 123, 198);
+  position: relative;
+  background: linear-gradient(
+    188deg,
+    rgba(49, 123, 198, 1) 0%,
+    rgba(26, 67, 111, 1) 100%
+  );
+}
+.login-page-control {
+  width: 350px;
+  height: 600px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.login-page-control img {
+  width: 200px;
+}
+.login-page-control h1 {
+  color: white;
+}
+.login-input {
+  background-color: transparent !important;
+  border-radius: 30px !important;
+  color: white !important;
+  border: 2px solid white !important;
+}
+.login-label {
+  color: white;
+}
+.login-btn {
+  width: 100%;
+  height: 40px;
+  background-color: rgba(26, 67, 111, 1);
+  color: white;
+  border-radius: 30px;
+  border: none;
+  transition: 0.3s;
+}
+.login-btn:hover {
+  background-color: rgb(15, 46, 78);
+}
+.login-btn:active {
+  background-color: rgb(12, 38, 65);
+}
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: rgba(255, 255, 255, 0.301) !important;
+}
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: rgba(255, 255, 255, 0.301) !important;
+}
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: red;
+  color: rgba(255, 255, 255, 0.301) !important;
+}
